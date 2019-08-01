@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "declarationMap": false,
+    "module": "commonjs",
+    "noEmit": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017"
+  },
+  "include": ["**/*/*.ts"],
+  "exclude": ["node_modules", "**/*.d.ts"]
+}

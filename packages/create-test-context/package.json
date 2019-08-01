@@ -1,0 +1,29 @@
+{
+  "name": "create-test-context",
+  "version": "0.0.1",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "files": [
+    "index.d.ts",
+    "index.d.ts.map",
+    "index.js",
+    "index.js.map",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "git clean -xdf",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-typescript": "7.3.3",
+    "@types/jest": "24.0.16",
+    "babel-jest": "24.8.0",
+    "jest": "24.8.0",
+    "source-map-support": "0.5.13",
+    "typescript": "3.5.3"
+  }
+}

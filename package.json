@@ -1,0 +1,30 @@
+{
+  "name": "create-test-context-workspaces",
+  "version": "0.0.1",
+  "description": "test context",
+  "repository": "https://github.com/satoruk/create-test-context",
+  "author": "satoruk",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspace create-test-context build",
+    "lint": "eslint . --cache --report-unused-disable-directives --ext js,ts,md",
+    "lint:fix": "eslint . --cache --report-unused-disable-directives --fix --ext js,ts,md",
+    "test": "yarn workspaces run test",
+    "test:create-test-context": "yarn workspace create-test-context run test"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "1.13.0",
+    "@typescript-eslint/parser": "1.13.0",
+    "eslint": "6.1.0",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-jest": "22.14.1",
+    "eslint-plugin-markdown": "1.0.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "prettier": "1.18.2",
+    "typescript": "3.5.3"
+  }
+}

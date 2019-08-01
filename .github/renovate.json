@@ -1,0 +1,18 @@
+{
+  "extends": ["config:base"],
+  "schedule": ["every weekend"],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "rebaseStalePrs": true,
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "patch": {
+    "automerge": true
+  },
+  "devDependencies": {
+    "automerge": true
+  }
+}
