@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "clean": "git clean -xdf",
+    "clean": "git clean -xdf -e node_modules",
     "test": "jest"
   },
   "devDependencies": {

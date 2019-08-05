@@ -10,7 +10,9 @@
   ],
   "license": "MIT",
   "scripts": {
+    "clean": "yarn workspace create-test-context clean",
     "build": "yarn workspace create-test-context build",
+    "publish": "yarn clean && yarn build && lerna publish",
     "lint": "eslint . --cache --report-unused-disable-directives --ext js,ts,md",
     "lint:fix": "eslint . --cache --report-unused-disable-directives --fix --ext js,ts,md",
     "test": "yarn workspaces run test",
