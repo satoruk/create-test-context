@@ -4,6 +4,9 @@
   "main": "index.js",
   "types": "index.d.ts",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "index.d.ts",
     "index.d.ts.map",
