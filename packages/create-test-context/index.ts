@@ -1,5 +1,3 @@
-import "source-map-support/register";
-
 export interface Context<T, S> {
   (name: number | string, args: T, fn: (options: T, state: S) => void): void;
 }

@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "packages/create-test-context"
+    }
+  ],
+  "settings": {}
+}

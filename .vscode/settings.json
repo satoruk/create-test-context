@@ -1,3 +1,4 @@
 {
-  "jest.enableSnapshotUpdateMessages": false
+  "jest.enableSnapshotUpdateMessages": false,
+  "cSpell.words": ["commitlint", "firestore"]
 }

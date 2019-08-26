@@ -10,7 +10,6 @@ module.exports = {
   displayName: pack.name,
   name: pack.name,
   rootDir: "../..",
+  preset: "ts-jest",
   testMatch: [`${packageRootDir}/**/*.test.ts`],
-  transform: { "^.+\\.[jt]sx?$": "babel-jest" },
-  testEnvironment: "node",
 };
