@@ -1,5 +1,8 @@
 {
   "name": "create-test-context",
+  "description": "test context",
+  "homepage": "https://github.com/satoruk/create-test-context/tree/master/packages/create-test-context",
+  "repository": "https://github.com/satoruk/create-test-context",
   "version": "0.0.3",
   "main": "index.js",
   "types": "index.d.ts",
@@ -7,26 +10,15 @@
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "index.d.ts",
-    "index.d.ts.map",
-    "index.js",
-    "index.js.map",
-    "package.json"
-  ],
   "scripts": {
     "build": "tsc",
     "clean": "git clean -xdf -e node_modules",
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/core": "7.5.5",
-    "@babel/preset-env": "7.5.5",
-    "@babel/preset-typescript": "7.3.3",
     "@types/jest": "24.0.18",
-    "babel-jest": "24.9.0",
     "jest": "24.9.0",
-    "source-map-support": "0.5.13",
+    "ts-jest": "24.0.2",
     "typescript": "3.5.3"
   }
 }

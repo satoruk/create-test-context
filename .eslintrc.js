@@ -1,11 +1,20 @@
 module.exports = {
   root: true,
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:jest/recommended",
-    "plugin:prettier/recommended",
-  ],
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  extends: ["eslint:recommended"],
+  globals: {
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly",
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: "module",
+  },
+  plugins: ["node"],
   rules: {
     "@typescript-eslint/indent": "off",
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
@@ -13,22 +22,17 @@ module.exports = {
   overrides: [
     {
       files: ["*.js", ".*.js"],
-      env: {
-        amd: true,
-        es6: true,
-        node: true,
-      },
       rules: {
         "@typescript-eslint/no-var-requires": "off",
       },
     },
     {
-      files: ["**/*.ts", "*.md"],
-      env: {
-        browser: true,
-        es6: true,
-        node: true,
-      },
+      files: ["*.ts"],
+      extends: [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jest/recommended",
+        "plugin:prettier/recommended",
+      ],
       globals: {
         "jest/globals": true,
         Atomics: "readonly",
@@ -39,10 +43,12 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: "module",
       },
-      plugins: ["@typescript-eslint", "jest", "markdown", "prettier"],
+      plugins: ["@typescript-eslint", "jest", "prettier"],
       rules: {
         "@typescript-eslint/explicit-function-return-type": ["off"],
         "@typescript-eslint/interface-name-prefix": ["off"],
+        "@typescript-eslint/member-delimiter-style": ["off"],
+        "@typescript-eslint/type-annotation-spacing": ["off"],
       },
     },
   ],

@@ -1,4 +1,5 @@
 module.exports = {
+  clearMocks: true,
   collectCoverage: true,
   coverageDirectory: "<rootDir>/coverage/",
   coverageThreshold: {
@@ -9,6 +10,7 @@ module.exports = {
       statements: 100,
     },
   },
-  verbose: true,
+  testEnvironment: "node",
   transformIgnorePatterns: [],
+  verbose: true,
 };

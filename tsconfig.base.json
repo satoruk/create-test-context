@@ -1,13 +1,19 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "declaration": false,
-    "declarationMap": false,
+    "allowJs": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "incremental": true,
     "module": "commonjs",
-    "noEmit": true,
+    "moduleResolution": "node",
+    "noEmit": false,
+    "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es2017"
+    "target": "ES2019"
   },
-  "include": ["**/*/*.ts"],
-  "exclude": ["node_modules", "**/*.d.ts"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "**/*.test.ts"]
 }
